@@ -131,8 +131,8 @@ let saludoLoop =
     createMainLoop 
         pipeline 
         (fun s -> s.ProgramState <> Terminated)
-        [| updateSaludoKeyboard|]
-        [| |] //idk
+        [| |]
+        [| |] 
         (fun s -> s.RedrawScreen)
         (fun s -> {s with RedrawScreen=false})
 let mostrar() =

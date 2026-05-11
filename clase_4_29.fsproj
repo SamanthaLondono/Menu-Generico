@@ -5,8 +5,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Types.fs" />
-    <Compile Include="Utils.fs" />
-    <Compile Include="Menu.fs" />
+    <Compile Include="Utils.fs" /><Compile Include="Menu.fs" />
+    
     <Compile Include="Rock.fs" />
     <Compile Include="Monster.fs" />
     <Compile Include="Saludo.fs" />

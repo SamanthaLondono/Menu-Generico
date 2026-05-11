@@ -27,9 +27,6 @@ let displayMonster state =
     displayMessage state.x state.y ConsoleColor.Yellow "👽"
     state
 
-let redrawMonster state = 
-    displayMessage state.x state.y ConsoleColor.Red "👽"
-
 let updateMonsterKeyboard key state =
     let newState =
         match key with 
@@ -77,8 +74,8 @@ let monsterLoop =
     createMainLoop
         pipeline
         (fun r -> r.ProgramState = Running)
-        [|updateMonsterKeyboard|]
-        [||] //idk
+        [|  |]
+        [|  |]
         (fun r -> r.RedrawScreen)
         (fun r ->{r with RedrawScreen=false})
 let mostrar() =
